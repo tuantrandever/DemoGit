@@ -1,118 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>THIẾT KẾ BLOG BẢN THÂN</title>
-	<link rel="stylesheet" type="text/css" href="vd3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>My CV</title>
 </head>
 <body>
-	<div id="wp">
-		<div id="left">
-			<div id="anh">
-				<img src="imgs/mau2.jpg">
-				<h2>Trần Anh Tuấn</h2><hr>
-                <h3>Th26.17</h3>
-			</div>
-			<div id="infomation">
-				<div class="cot">
-					<span><img src="imgs/items2.png"></span>
-					<span><h4>Profile</h4></span><br></div>
-					<div class="cot1">
-                    <p>Giới thiệu về bản thân: tính cách , sở thích , mơ ước,...</p>
-			</div>
-			</div>
-			<div id="content">
-				<div class="cot">
-					<span><img src="imgs/items1.png"></span>
-					<span><h4>Contact</h4></span><br></div>
-			      <div class="cot2">
-			      	<span><img src="imgs/items3.png"></span>
-			      	<span><p>Nghệ An</p></span>
-			      </div>
-			      <div class="cot2">
-			      	<span><img src="https://cdn.pixabay.com/photo/2017/01/10/03/54/icon-1968244_1280.png"></span>
-			      	<span><p>0373567905</p></span>
-			      </div>
-			      <div class="cot2">
-			      	<span><img src="http://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc">
-			 <a href="https://www.facebook.com/profile.php?id=100023663270080&mibextid=LQQJ4d
-          ">Trần Tuấn</a></span>
-			      </div>
-			      <div class="cot2">
-			      	<span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/1024px-Circle-icons-mail.svg.png"></span>
-			      	<span><p>tuant4112@gmail.com</p></span>
-			      </div> 
-			</div>
-			<div id="content1">
-				<div class="cot">
-					<span><img src="imgs/items9.png"></span>
-					<span><h4>Hobby</h4></span><br></div>
-					<div class="cot2">
-			      	<span><img src="imgs/items4.png"></span>
-			      	<span><p>Đọc sách</p></span>
-			      </div>
-			      <div class="cot2">
-			      	<span><img src="imgs/items5.png"></span>
-			      	<span><p>Đi du lịch</p></span>
-			      </div>
-			       <div class="cot2">
-			      	<span><img src="imgs/items6.png"></span>
-			      	<span><p>Thể thao</p></span>
-			      </div>
-			        <div class="cot2">
-			      	<span><img src="imgs/items7.png"></span>
-			      	<span><p>Khám phá khoa học</p></span>
-			      </div>
-			</div>
-		</div>
-		<div id="right">
-			<div id="header">
-				<div class="head1">
-					<span><img src="imgs/items8.png"></span>
-					<span><h4>Các trường đã học</h4></span><br></div>
-					<div class="vong">
-						<span>2006-2011</span>
-						<span class="vong1"><p><h5>Trường tiểu học ....</h5><br></p><p>Trường tiểu học của tôi là một ngôi trường khá là đẹp nó lưu giữ biết bao kỷ niệm đẹp.</p><p>Nó là nơi hình thành nên tôi của hiện tại , thầy cô và bạn bè đều hiền hòa và dễ thương , và hơn hết tôi luôn là học sinh xuất sắc. </p></span>
-					</div>
-					<div class="vong">
-						<span>2011-2015</span>
-						<span class="vong1"><p><h5>Trường trung học cơ  ....</h5><br></p><p>Trường trung học cơ sở của tôi là một ngôi trường được nổi tiếng nhất vùng về vấn đề giáo dục và rèn luyện học sinh thành tài , ngôi trường đấy bồi dưỡng cho chúng tôi cả trí tuệ lẫn thể chất.</p></span>
-					</div>
-					<div class="vong">
-						<span>2015-2018</span>
-						<span class="vong1"><p><h5>Trường trung học phổ thông  ....</h5><br></p><p>Trường trung học phổ là ngôi trường để lại cho tôi nhiều kỷ niệm nhất mỗi lần nhắc đến là bao ký ức ùa về , đó là ngôi trường khiến tôi gặp được mối tính đầu của mình , và đấy cũng là nơi đã giáo dục cho tôi thành người như nay.</p></span>
-					</div>
+    <header id="header">
+     <img class="logo" src="imgs/iconT.jpg" alt="">
+     <button class="btnHeader" onclick="Openpage('about')" id="show">About</button>
+     <button class="btnHeader" onclick="Openpage('mycv')">My cv</button>
+     <button class="btnHeader" onclick="Openpage('work')">Work experience</button>
+     <button class="btnHeader" onclick="Openpage('contact')">Contact</button>
+     <button class="btnIcon" onclick="openLink('https://www.facebook.com/profile.php?id=100023663270080')"><i class="fa-brands fa-facebook"></i></button>
+     <button class="btnIcon" onclick="call()"> <i class="fa-solid fa-phone"></i></button>
+     <button class="btnIcon" onclick="openLink('https://www.instagram.com/tuantran.203/')"><i class="fa-brands fa-instagram"></i></button>
+     <button class="btnIcon" onclick="openLink('https://soundcloud.com/huy-nguy-n-828348704?ref=clipboard&p=i&c=1&si=5220B37D767D4EDEA90800AF9F10DD14&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing')"><i class="fa-brands fa-spotify"></i></button>
+ </header>
+    <main>
+        <section id="about" class="content active">
+            <div class="blog_about">
+                <div class="text_about">
+                    <h1>About me</h1>
+                <p>Hello everyone, my name is Tran Anh Tuan, my hometown is Nghe An, currently I am living and working in Hanoi city.
+                I love Hanoi. I'm an Intern Designer and UI Developer from Hanoi, Vietnam.</p><br>
+                <p>As a student, I’ve discovered a true passion for web development—a field that blends creativity and technology in such an exciting way.
+                    The idea of turning simple concepts into interactive and visually appealing websites feels almost magical to me.
+                    Every time I write a piece of code or design a user interface, I feel like I’m crafting something meaningful.
+                    I enjoy experimenting with new tools and frameworks, learning how to make websites not just functional but also engaging and user-friendly.
+                    Responsive design, performance optimization, and accessibility are areas I’m particularly excited to explore and improve.
+                    For me, web development is more than just an academic pursuit. It’s a way to express creativity, solve problems, and bring ideas to life.
+                    Each project I take on as a student is not just a learning experience but also a step closer to becoming the developer I aspire to be.</p>
+                    <button class="btntext_about" onclick="openLink('https://www.facebook.com/profile.php?id=100023663270080')">Like  </button>
+                    <button class="btntext_about" onclick="call()">Contact to me</button>
+                </div>
+                <div class="img_about">
+                    <img src="imgs/me.jpg">
+                </div>
+            </div>
+            <div>
+            <div id="bottom_about">
+                <div class="giua">
+                    <p>Me</p>
+                    <img src="imgs/me2.jpg" alt="">
+                </div>
+                <div class="giua">
+                    <p>My Girl</p>
+                    <img src="imgs/my_girl.jpg" alt="">
+                </div>
+                <div class="giua">
+                    <p>My Family</p>
+                    <img src="imgs/my_family.jpg" alt="">
+                </div>
+                <div class="giua">
+                    <p>My Friend</p>
+                    <img src="imgs/my_friendend.jpg" alt="">
+                </div>
+                <div class="giua">
+                    <p>My Family</p>
+                    <img src="imgs/family.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+            
+        </section>
+        <section id="mycv" class="content">
+            <div class="cv">
+                <div class="f_left">
+                    <img src="imgs/me2.jpg" class="avatar">
+                    <div class="info">
+                        <h3>Contact</h3>
+                        <p>+84 0373567905</p>
+                        <h3>Email</h3>
+                        <p>tuant4112@gmail.com</p>
+                        <h3>Date of Birthday</h3>
+                        <p>11/12/2003</p>
+                        <h3>Address</h3>
+                        <p>Xã Ngoc Bich, Dien Chau, Nghe An</p>
+                        <h3>Skill</h3>
+                        <p>Skill 1</p>
+                        <p>Skill 2</p>
+                        <p>Skill 3</p>
+                        <p>Skill 4</p>
+                        <h3>Education</h3>
+                        <h4>HaNoi University Business and Technology</h4>
+                        <p>Infomation Technology</p>
 
-			</div>
-				<div class="head1">
-					<span><img src="imgs/items10.jpg"></span>
-					<span><h4>Công việc mong muốn</h4></span></div><br>
-					<div id="between">
-					<div class="giua">
-						<p>LẬP TRÌNH VIÊN</p>
-	<img src="imgs/items11.jpeg">
-</div>
-<div class="giua">
-	<p>QUẢN TRỊ MẠNG</p>
-	<img src="imgs/items12.jpeg">
-</div>
-<div class="giua">
-	<p>THIẾT KẾ WEB</p>
-	<img src="imgs/items13.jpg">
-</div>
-			</div>
-				<div class="head1">
-					<span><img src="imgs/items14.jpg"></span>
-					<span><h4>Gia đình - Bạn bè</h4></span></div><br>
-    <div id=footer>
-    	<img class="zoom" src="imgs/mau4.jpg">
-    	<img class="xoay" src="imgs/mau6.jpg">
-    	<img class="nghieng" src="imgs/mau7.jpg">
-    	<img class="dichuyen" src="imgs/mau8.jpg">
-    </div>
-		</div>
-	</div>
+                    </div>
+                </div>
+                <div class="f_right">
+                    <div class="name">
+                        <h1>Tran Anh Tuan</h1>
+                        <p>Intern Front-End And Back-End Developer</p>
+            
+                    </div>
+                    <!-- Mục tiêu nghề nghiệp -->
+                    <div class="text_right">
+                        <h3>Career Goals</h3>
+                        <p>I am a Frontend Developer intern with a passion for building beautiful,
+                            intuitive, and efficient user interfaces. Every day, I strive to learn and improve my programming skills,
+                            from mastering fundamental technologies like HTML, CSS, and JavaScript to exploring and applying modern frameworks such as React,...
+                            My ultimate goal is to become a professional Frontend Developer, not just working with code but also understanding how users interact with the products.
+                            I believe that combining design thinking with programming skills can help create exceptional user experiences.
+                            Currently, I am focusing on building real-world projects to enhance my skills and seeking opportunities to learn from experienced professionals in the field.
+                            I am always ready to challenge myself to achieve my goal of becoming a professional developer in the near future.</p>
+                    </div>
+                    <div class="kn_lv">
+                        <h3>Work Experience</h3>
 
+                    </div>
+                    <div class="ex">
+                        <h4>Company Name</h4>
+                        <p>Work Position</p>
+                        <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Third</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <section id="work" class="content">
+        <div class="p-top">
+            <img src="imgs/Work_1.jpg" alt="alt" class="background-p"/>
+            <div class="text-top-p">
+                <h1>Kinh nghiệm làm việc</h1>
+                <p>Những công việc tôi từng làm và kinh nghiệm tôi có được từ đó</p>
+            </div>
+            <div class="btn-p">
+                <button class="btnPort bnta1" onclick="Openjob('guigui')">Quản lý chuỗi nguyên liệu - thực phẩm<br> - <br>Cty lẩu nướng guigui</button>
+                <button class="btnPort bnta2" onclick="Openjob('wonhome')">CSKH & sale at the store<br> - <br>Wonhome & Owndays</button>
+                <button class="btnPort bnta3" onclick="Openjob('owndays')">Intern Front-End</button>
+            </div>
+            <div id="info-container"> 
+                <div id="info-guigui" class="info-content">
+                    <p>Quản lý chuỗi nguyên liệu - thực phẩm</p>Cty lẩu nướng guigui<br>
+                    <p>Tôi đã học được cách quản lý nguồn cung cấp thực phẩm một cách chi tiết</p>
+                </div>
+                <div id="info-wonhome" class="info-content">
+                    <p>CSKH & Sale</p> Wonhome & Owndays<br>
+                    <p>Kinh nghiệm chăm sóc khách hàng và quản lý bán hàng tại cửa hàng.</p>
+                </div>
+                <div id="info-owndays" class="info-content">
+                    <p>Intern Front-End</p><br>
+                    <p>Học cách xây dựng và phát triển giao diện người dùng với các công nghệ hiện đại như HTML, CSS và JavaScript.</p>
+                </div>
+                 </div>
+        </div>
+
+      </section>
+      <section id="contact" class="content">
+        <div class="contact_left">
+            <h1 class="text_contact">Contact to me</h1>
+            <ul class="ct_contact">
+                <li><a href="#1">My phone: +84 373567905</a></li>
+                <li><a href="#2">Email: tuant4112@gmail.com</a></li>
+                <li><a href="#3">https://www.facebook.com/profile.php?id=100023663270080</a></li>
+            </ul>
+        </div>
+        <div class="contact_right">
+            <h1 class="text_contact">Please send me comments and suggestions</h1>
+            <div class="form-container">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="first-name">First name *</label>
+                            <input type="text" id="first-name" name="first-name" required />
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name">Last name *</label>
+                            <input type="text" id="last-name" name="last-name" required />
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Leave us a message...</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="index.js"></script>
+    <footer id="footer">
+        <h2>©2025 design by me.</h2>
+    </footer>
 </body>
 </html>
